@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# 📱 Student Feed App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+แอป **ฟีดนักศึกษา (Student Feed App)** เป็นแอปพลิเคชันบนมือถือพัฒนาโดยใช้ **React Native (Expo)**  
+สำหรับให้นักศึกษาสามารถโพสต์ แสดงความคิดเห็น และกดถูกใจโพสต์ของเพื่อน ๆ ได้ในรูปแบบโซเชียลขนาดเล็ก  
+ข้อมูลทั้งหมดดึงจาก **API ของ CIS KKU** (https://cis.kku.ac.th/api/classroom)
 
-## Get started
+---
 
-1. Install dependencies
+## 👨‍💻 ข้อมูลผู้พัฒนา
+- **ชื่อ-นามสกุล:** เทพฤทธิ์ อินทรประพันธ์  
+- **รหัสนักศึกษา:** 653450091-4  
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🧩 เทคโนโลยีที่ใช้
+- **React Native (Expo)**
+- **TypeScript**
+- **Expo Router**
+- **React Hooks**
+- **CIS KKU API**
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🧠 ฟีเจอร์หลัก
+- เข้าสู่ระบบด้วยบัญชีนักศึกษา CIS  
+- โพสต์ข้อความสั้น ๆ ลงฟีด  
+- แสดงความคิดเห็นในแต่ละโพสต์  
+- กดถูกใจได้เพียงครั้งเดียว  
+- ลบคอมเมนต์ของตนเอง  
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## ⚙️ วิธีติดตั้งและใช้งาน
 
-## Get a fresh project
-
-When you're ready, run:
-
+### 1️⃣ ติดตั้งโปรเจกต์
 ```bash
-npm run reset-project
-```
+npm install
+npx expo start
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+student-feed-app/
+│
+├── app/
+│   ├── index.tsx             # หน้าแรก (Login)
+│   ├── home.tsx              # หน้าหลักหลังล็อกอิน
+│   ├── feed/
+│   │   ├── index.tsx         # หน้าแสดงโพสต์ทั้งหมด
+│   │   └── [id].tsx          # หน้าแสดงโพสต์เดี่ยว
+│   ├── student.tsx           # หน้าแสดงรายชื่อนักศึกษา
+│
+├── assets/                   # รูปภาพ / ไอคอน
+├── package.json
+└── README.md
