@@ -26,7 +26,7 @@ export default function PostDetail() {
 
   const likeAnim = useRef(new Animated.Value(1)).current;
 
-  const API_KEY = process.env.api_key;
+  const API_KEY = "042f7bffb5f4cb1bcfda9389abc1506d8c75e35c84e813517759d8cf131fa3b1";
 
   // ✅ ดึงโพสต์ตาม ID
   const fetchPost = async () => {
